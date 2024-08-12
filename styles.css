@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.cart {
+    max-width: 600px;
+    margin: auto;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.item-name {
+    flex: 1;
+}
+
+.like-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: grey;
+    cursor: pointer;
+}
+
+.like-button.liked {
+    color: red;
+}
+
+.delete-button {
+    margin-left: 10px;
+}
+
+.quantity-button {
+    margin: 0 5px;
+}
+
+.total {
+    margin-top: 20px;
+    font-size: 18px;
+}

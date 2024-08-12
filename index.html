@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cart">
+        <h1>Shopping Cart</h1>
+        <ul id="cart-items">
+            <!-- Example Item -->
+            <li class="cart-item" data-price="20">
+                <span class="item-name">Item 1</span>
+                <button class="like-button">&#9829;</button>
+                <button class="delete-button">Delete</button>
+                <button class="quantity-button" onclick="adjustQuantity(this, -1)">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-button" onclick="adjustQuantity(this, 1)">+</button>
+                <span class="item-price">$200</span>
+            </li>
+            <!-- Add more items as needed -->
+        </ul>
+        <div class="total">
+            <strong>Total: $<span id="total-price">200</span></strong>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
